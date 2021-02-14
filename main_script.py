@@ -9,11 +9,11 @@ headers = root.findall('./*/transaction/table/tabledesc/*')
 body = root.findall('./*/transaction/table/replace/*')
 
 struc = OrderedDict()
-# body
 
 
-for head in headers:
-    struc[head.attrib['name']] = [head.attrib['label']]
+
+for header in headers:
+    struc[header.attrib['name']] = [header.attrib['label']]
 
 for el in body:
     if el.tag == 'record':
@@ -28,18 +28,13 @@ for el in body:
     else:
         continue
 
-# for el in body:
-#    try:
-#        struc[el.attrib['name']].append(el.attrib['value'])
-#    except:
-#        struc[el.attrib['name']].append("")
 
 df = pd.DataFrame(struc)
 
 # determining the name of the file
 file_name = input('Vvedite absolute path dlya sohraneniya file and name of the file: ')
 
-# saving the excel
+# saving the csv
 df.to_csv(file_name)
 print('DataFrame is written to Excel File successfully.')
 
