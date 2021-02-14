@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package>
+    <rollout dateSet="15.09.2020" name="12" timeSet="00:01:18">
+        <comment/>
+        <transaction group="1" name="name1">
+            <comment>d</comment>
+            <table name="wtf">
+                <comment/>
+                <tabledesc>
+                    <fielddesc name="car" key="false" type="numeric" label="Автомобиль" comment=""/>
+                    <fielddesc name="juice" key="false" type="numeric" label="Сок" comment=""/>
+                    <fielddesc name="banana" key="false" type="string" label="Банан" comment=""/>
+                    <fielddesc name="something" key="false" type="numeric" label="Что-то" comment=""/>
+                    <fielddesc name="pane" key="false" type="string" label="Панель" comment=""/>
+                    <fielddesc name="tray" key="false" type="numeric" label="Поднос" comment=""/>
+                    <fielddesc name="carriage" key="false" type="numeric" label="Вагон" comment=""/>
+                    <fielddesc name="wtf" key="false" type="string" label="Чзх" comment=""/>
+                    <fielddesc name="print" key="false" type="string" label="Отпечаток" comment=""/>
+                    <fielddesc name="table" key="false" type="string" label="Таблица" comment=""/>
+                    <fielddesc name="chair" key="false" type="numeric" label="Стул" comment=""/>
+                    <fielddesc name="stool" key="false" type="numeric" label="Табурет" comment=""/>
+                    <fielddesc name="dock" key="false" type="numeric" label="Порт" comment=""/>
+                </tabledesc>
+                <convert/>
+                <replace>
+                    <record>
+                        <field name="car" null="true" value="Mercedes"/>
+                        <field name="juice" null="true" value="1.75"/>
+                        <field name="banana" null="true"/>
+                        <field name="something" null="true"/>
+                        <field name="pane" null="true"/>
+                        <field name="tray" null="false" value="2.0"/>
+                        <field name="carriage" null="false" value="1"/>
+                        <field name="wtf" null="true"/>
+                        <field name="print" null="true"/>
+                        <field name="table" null="true"/>
+                        <field name="chair" null="false" value="0"/>
+                        <field name="stool" null="true"/>
+                        <field name="dock" null="true"/>
+                    </record>
+                    <record>
+                        <field name="car" null="true"/>
+                        <field name="juice" null="true"/>
+                        <field name="banana" null="true"/>
+                        <field name="something" null="true"/>
+                        <field name="pane" null="true"/>
+                        <field name="tray" null="false" value="2.0"/>
+                        <field name="carriage" null="false" value="1"/>
+                        <field name="wtf" null="true"/>
+                        <field name="print" null="true"/>
+                        <field name="table" null="true"/>
+                        <field name="chair" null="false" value="0"/>
+                        <field name="stool" null="true"/>
+                        <field name="dock" null="true"/>
+                    </record>
+                    <record>
+                        <field name="car" null="true"/>
+                        <field name="juice" null="true"/>
+                        <field name="banana" null="true"/>
+                        <field name="something" null="true"/>
+                        <field name="pane" null="true"/>
+                        <field name="tray" null="false" value="2.0"/>
+                        <field name="carriage" null="false" value="1"/>
+                        <field name="wtf" null="true"/>
+                        <field name="print" null="true"/>
+                        <field name="table" null="true"/>
+                        <field name="chair" null="false" value="0"/>
+                        <field name="stool" null="true"/>
+                        <field name="dock" null="true"/>
+                    </record>
+                    <record>
+                        <field name="car" null="true"/>
+                        <field name="juice" null="true"/>
+                        <field name="banana" null="true"/>
+                        <field name="something" null="true"/>
+                        <field name="pane" null="true"/>
+                        <field name="tray" null="false" value="6.0"/>
+                        <field name="carriage" null="true"/>
+                        <field name="wtf" null="true"/>
+                        <field name="print" null="true"/>
+                        <field name="table" null="true"/>
+                        <field name="chair" null="false" value="0"/>
+                        <field name="stool" null="true"/>
+                        <field name="dock" null="true"/>
+                    </record>
+                </replace>
+            </table>
+        </transaction>
+    </rollout>
+</package>
